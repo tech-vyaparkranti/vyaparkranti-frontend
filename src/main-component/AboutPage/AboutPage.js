@@ -25,8 +25,8 @@ const AboutPage = (props) => {
             
              <BuildStep />
             {/* <TeamSection /> */}
-            <TeamSectionTwo />
-            <TeamSectionS2 />
+            {/* <TeamSectionTwo /> */}
+            {/* <TeamSectionS2 /> */}
              <WhyChoose3 />
             {/* <FunFact3 /> */}
             

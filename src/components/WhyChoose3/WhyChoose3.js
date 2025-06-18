@@ -132,7 +132,7 @@ const fetchBannerData = async () => {
                                 <li>Perfect for large sites or agencies managing multiple clients.</li>
                                 <li>Our easy-to-use control panel and API let you spend</li>
                             </ul> */}
-                            <Link onClick={ClickHandler} to="/contact" className="theme-btn btn-style-five"><span className="txt">Learn More</span></Link>
+                            <Link onClick={ClickHandler} to="/contact" className="theme-btn btn-style-five"><span className="txt">Contact Us</span></Link>
                         </div>
                     </div>
 

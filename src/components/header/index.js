@@ -6,6 +6,7 @@ import { connect } from "react-redux";
 import { removeFromCart } from "../../store/actions/action";
 // import Logo from '../../images/logo.png'
 import companylogo3 from '../../images/companylogo/logocorrectwhite.jpg'
+import oldlogo3 from "../../images/companylogo/oldlogo3.png"
 import ContactFormModal from '../ContactFormModal/ContactFormModal';
 // import Dashboard from './../Dashboard/Dashboard';
 import htmlReactParser, { domToReact } from 'html-react-parser';
@@ -126,7 +127,7 @@ const Header = (props) => {
                         </Link></div>
                     </div> */}
                     <div className="pull-left logo-box">
-                        <div className="logo"  ><Link onClick={ClickHandler} to="/home"><img src={companylogo3} alt="" title=""  style={{width:'170px', height: "80px"}}/></Link></div>
+                        <div className="logo"  ><Link onClick={ClickHandler} to="/home"><img src={oldlogo3} alt="" title=""  style={{width:'170px', height: "80px"}}/></Link></div>
                     </div>
                     <div className="nav-outer clearfix">
                         <MobileMenu/>

@@ -149,7 +149,7 @@ const PartnerSection = (props) => {
          
           
         <section className={`clients-section ${props.styleClass}`}>
-             <SectionTitle subTitle={'Our Affiliate'} />
+             <SectionTitle subTitle={'Part of Our Growth Network'} />
             <div className="auto-container">
                 <div className="inner-container">
                     <div className="sponsors-outer">

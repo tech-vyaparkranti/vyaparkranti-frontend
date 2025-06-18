@@ -103,8 +103,8 @@ const AllRoute = () => {
           <Route path='/package-page' element={<PricingPage />} />
           <Route path='/domain' element={<DomainPage />} />
           <Route path='/payment' element={<PaymentPage />} />
-          <Route path='/laravel/payment/success' element={<PaymentSucessPage />} />
-          <Route path='/laravel/payment/error' element={<PaymentFailPage />} />
+          <Route path='/success' element={<PaymentSucessPage />} />
+          <Route path='/error' element={<PaymentFailPage />} />
             {/* <Route path='/faq' element={<Faq />} /> */}
 
 

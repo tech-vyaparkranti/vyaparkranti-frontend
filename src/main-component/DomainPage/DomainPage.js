@@ -8,13 +8,17 @@ import Subscribe from '../../components/Subscribe/Subscribe';
  
 import Domain from '../../components/Domain/Domain';
 import DomainSearch from '../../components/Domain/DomainSearch';
+import PageTitleTwo from '../../components/pagetitle/PageTitleTwo';
 
 const DomainPage = (props) => {
 
     return (
         <Fragment>
             <Navbar />
-            <PageTitle pageTitle={'Domain '} pagesub={'Domain'} />
+             
+            {/* <PageTitle pageTitle={'Domain '} pagesub={'Domain'} /> */}
+            <PageTitleTwo />
+              
             {/* <Pricing sClass={'style-two'}/> */}
             {/* <Pricing sClass={'style-two'} showCompare={true} />
             <PackageComparison /> */}

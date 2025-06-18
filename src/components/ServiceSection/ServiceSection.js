@@ -636,7 +636,7 @@ const ServiceSection = (props) => {
             const now = new Date().getTime();
             const cacheTime = parseInt(cachedTimestamp);
             
-            if (now - cacheTime < 5 * 60 * 1000) { // 5 minutes
+            if (now - cacheTime < 30 * 1000) {
                 try {
                     const parsedData = JSON.parse(cachedData);
                     setApiServices(parsedData);

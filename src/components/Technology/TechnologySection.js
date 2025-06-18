@@ -1157,7 +1157,7 @@ const TechnologySection = () => {
           <div className="col-12 text-center">
             <SectionTitle subTitle={'Our Technologies'} />
             <p className="text-muted lead mb-5 animate__animated animate__fadeIn animate__delay-1s">
-              We leverage cutting-edge technologies to deliver powerful, scalable solutions
+              At Vyapar Kranti, we accelerate business growth through robust digital solutions and enterprise-grade architecture. Our full-stack development expertise spans Laravel, React,Next.js, Angular, Node.js, PHP, TypeScript, and .NET, enabling us to build scalable, high-performance applications with optimized databases, API integrations, and cloud-native infrastructures for modern enterprises.
             </p>
             
             {/* Category Tabs */}

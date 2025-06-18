@@ -204,7 +204,7 @@ import Projects from '../../api/project';
 import shape1 from '../../images/background/pattern-3.png';
 import shape2 from '../../images/background/pattern-4.png';
 import shape3 from '../../images/background/pattern-5.png';
-import companylogo3 from '../../images/companylogo/logonewwhite.jpg';
+import oldlogo3 from '../../images/companylogo/oldlogo3.png';
 import PrivacyPage from './../../main-component/PrivacyPage/PrivacyPage';
 import htmlReactParser, { domToReact } from 'html-react-parser';
 import { API_BASE_URL } from '../../api/config/apiConfig';
@@ -318,7 +318,7 @@ const Footer = (props) => {
                                 </div> */}
 
                                     <div className="logo">
-                                            <Link onClick={ClickHandler} to="/"><img src={companylogo3} alt="" style={{width: '170px', height: "80px"}} /></Link>
+                                            <Link onClick={ClickHandler} to="/"><img src={oldlogo3} alt="" style={{width: '170px', height: "80px"}} /></Link>
                                      </div>
 
                                         <div className="text">

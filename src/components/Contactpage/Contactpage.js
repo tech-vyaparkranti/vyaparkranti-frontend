@@ -248,8 +248,9 @@ useEffect(() => {
                         <div className="title"> </div>
                         <h2>Now Very Easy</h2>
                         <div className="text">
-                            Our approach to SEO is uniquely built around what we know works…
-                            <br /> and what we know doesn’t work.
+                            Vyapar Kranti is an ITES & Brand Solution company helping businesses  
+
+                            <br /> boost digital presence and connect better with customers.
                         </div>
                     </div>
                     <div className="inner-container">
