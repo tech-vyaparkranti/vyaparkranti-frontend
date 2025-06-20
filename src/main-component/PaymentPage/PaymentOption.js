@@ -1,5 +1,6 @@
  import React, { useState } from 'react';
 import { CreditCard, Smartphone, Building2, FileText, QrCode, Copy, Check } from 'lucide-react';
+import paytmCode from '../../images/companylogo/paytmcode.jpg';
 
 export default function PaymentOptionsPage() {
   const [selectedMethod, setSelectedMethod] = useState('upi');
@@ -20,7 +21,7 @@ export default function PaymentOptionsPage() {
     { name: 'Paytm', color: 'btn-warning', icon: '💰' }
   ];
 
-  const upiId = 'merchant@paytm';
+  const upiId = '9958224825@pz';
   const qrCodeData = `upi://pay?pa=${upiId}&pn=MerchantName&cu=INR`;
 
   return (
@@ -140,7 +141,7 @@ export default function PaymentOptionsPage() {
                       </div>
                     </div>
                     
-                    <div
+                    {/* <div
                       className={`card method-btn p-3 ${selectedMethod === 'check' ? 'active' : ''}`}
                       onClick={() => setSelectedMethod('check')}
                       style={{ cursor: 'pointer' }}
@@ -149,9 +150,9 @@ export default function PaymentOptionsPage() {
                         <FileText className="payment-method-icon me-3 text-warning" />
                         <span className="fw-medium">Check Payment</span>
                       </div>
-                    </div>
+                    </div> */}
                     
-                    <div
+                    {/* <div
                       className={`card method-btn p-3 ${selectedMethod === 'gateway' ? 'active' : ''}`}
                       onClick={() => setSelectedMethod('gateway')}
                       style={{ cursor: 'pointer' }}
@@ -160,7 +161,7 @@ export default function PaymentOptionsPage() {
                         <CreditCard className="payment-method-icon me-3 text-danger" />
                         <span className="fw-medium">Payment Gateway</span>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -198,20 +199,24 @@ export default function PaymentOptionsPage() {
                           
                           <div className="card bg-light p-3">
                             <label className="form-label small fw-medium text-muted mb-2">Merchant Name</label>
-                            <span className="h5 mb-0">vyaparkranti Pvt Ltd</span>
+                            <span className="h5 mb-0">PRATHMA INOPEX PRIVATE LIMITED</span>
                           </div>
                         </div>
                         
-                        <div className="col-md-6 text-center">
-                          <h3 className="h5 fw-medium mb-4 text-dark">Scan QR Code</h3>
-                          <div className="qr-placeholder mx-auto">
-                            <div className="text-center">
-                              <QrCode size={48} className="text-muted mb-2" />
-                              <p className="small text-muted mb-1">QR Code</p>
-                              <p className="small text-muted">Scan with any UPI app</p>
-                            </div>
+                         <div className="col-md-6 text-center">
+                        <h3 className="h5 fw-medium mb-4 text-dark">Scan QR Code</h3>
+                        <div className="qr-placeholder mx-auto">
+                          <div className="text-center">
+                            <img
+                              src={paytmCode}  // Use imported variable
+                              alt="QR Code"
+                              className="mb-2"
+                              style={{ width: "150px", height: "150px" }}
+                            />
                           </div>
                         </div>
+                      </div>
+
                       </div>
                     </div>
                   )}
@@ -229,10 +234,10 @@ export default function PaymentOptionsPage() {
                             <div className="card bg-light p-3">
                               <label className="form-label small fw-medium text-muted mb-2">Account Name</label>
                               <div className="d-flex justify-content-between align-items-center">
-                                <span className="h6 mb-0">vyaparkranti Pvt Ltd</span>
+                                <span className="h6 mb-0">PRATHMA INOPEX PRIVATE LIMITED</span>
                                 <button
                                   className="copy-btn"
-                                  onClick={() => copyToClipboard('VyaparKranti Pvt Ltd', 'account')}
+                                  onClick={() => copyToClipboard('PRATHMA INOPEX PRIVATE LIMITED', 'account')}
                                   title="Copy Account Name"
                                 >
                                   {copiedField === 'account' ? <Check size={16} /> : <Copy size={16} />}
@@ -245,10 +250,10 @@ export default function PaymentOptionsPage() {
                             <div className="card bg-light p-3">
                               <label className="form-label small fw-medium text-muted mb-2">Account Number</label>
                               <div className="d-flex justify-content-between align-items-center">
-                                <span className="font-monospace h6 mb-0">1234567890123456</span>
+                                <span className="font-monospace h6 mb-0">50200094899965</span>
                                 <button
                                   className="copy-btn"
-                                  onClick={() => copyToClipboard('1234567890123456', 'accnum')}
+                                  onClick={() => copyToClipboard('50200094899965', 'accnum')}
                                   title="Copy Account Number"
                                 >
                                   {copiedField === 'accnum' ? <Check size={16} /> : <Copy size={16} />}
@@ -261,10 +266,10 @@ export default function PaymentOptionsPage() {
                             <div className="card bg-light p-3">
                               <label className="form-label small fw-medium text-muted mb-2">IFSC Code</label>
                               <div className="d-flex justify-content-between align-items-center">
-                                <span className="font-monospace h6 mb-0">HDFC0001234</span>
+                                <span className="font-monospace h6 mb-0">HDFC0000438</span>
                                 <button
                                   className="copy-btn"
-                                  onClick={() => copyToClipboard('HDFC0001234', 'ifsc')}
+                                  onClick={() => copyToClipboard('HDFC0000438', 'ifsc')}
                                   title="Copy IFSC Code"
                                 >
                                   {copiedField === 'ifsc' ? <Check size={16} /> : <Copy size={16} />}
@@ -278,14 +283,14 @@ export default function PaymentOptionsPage() {
                           <div className="mb-3">
                             <div className="card bg-light p-3">
                               <label className="form-label small fw-medium text-muted mb-2">Bank Name</label>
-                              <span className="h6 mb-0">HDFC Bank</span>
+                              <span className="h6 mb-0">HDFC BANK LTD</span>
                             </div>
                           </div>
                           
                           <div className="mb-3">
                             <div className="card bg-light p-3">
                               <label className="form-label small fw-medium text-muted mb-2">Branch</label>
-                              <span className="h6 mb-0">Connaught Place, New Delhi</span>
+                              <span className="h6 mb-0">THANA ROAD, NAJAFGARH</span>
                             </div>
                           </div>
                           

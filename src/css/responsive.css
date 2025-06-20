@@ -259,7 +259,8 @@
 	.main-header{
 		position:relative;
 		padding-top:0px;
-		background-color:#222222;
+		/* background-color:#222222; */
+		background: linear-gradient(to right, #6917B4 0%, #d54be1 100%);
 	}
 	
 	.main-header .nav-outer{

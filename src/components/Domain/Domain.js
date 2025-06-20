@@ -118,7 +118,7 @@ const Domain = () => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate('/package-page');  
+    navigate('/hosting-package');  
   };
 
   return (

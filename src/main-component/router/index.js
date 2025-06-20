@@ -67,7 +67,7 @@ const AllRoute = () => {
           <Route path='price' element={<PricingPage />} />
           <Route path="services" element={<ServicePage />} />
           {/* <Route path="service-single/:slug" element={<ServiceSinglePage />} /> */}
-          <Route path="service-single/:slug" element={<ServiceSinglePage />} />
+          <Route path="service/:slug" element={<ServiceSinglePage />} />
 
           <Route path="projects" element={<ProjectPage />} />
           <Route path="projects-left-sidebar" element={<ProjectLeftPage />} />
@@ -99,8 +99,8 @@ const AllRoute = () => {
           <Route path='/gallery' element={<GalleryPage />} />
           <Route path='/ContactFormModal' element={<ContactFormModal />} />
           <Route path='/technology' element={<TechnologyPage />} />
-          {/* <Route path='/package-page' element={<PricingSinglePage />} /> */}
-          <Route path='/package-page' element={<PricingPage />} />
+          {/* <Route path='/hosting-package' element={<PricingSinglePage />} /> */}
+          <Route path='/hosting-package' element={<PricingPage />} />
           <Route path='/domain' element={<DomainPage />} />
           <Route path='/payment' element={<PaymentPage />} />
           <Route path='/success' element={<PaymentSucessPage />} />

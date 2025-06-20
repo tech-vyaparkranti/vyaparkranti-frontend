@@ -288,7 +288,7 @@ const menus = [
      {
         id: 8,
         title: 'Hosting',
-        link: '/package-page',
+        link: '/hosting-package',
     },
 
      {

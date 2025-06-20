@@ -149,7 +149,7 @@ const ServiceSection = ({ services = [], onClick, limit = 6 }) => {
             </Link> */}
               <Link 
               onClick={ClickHandler} 
-              to={`/service-single/${service.slug}`}
+              to={`/service/${service.slug}`}
               state={{ serviceData: service }}
           >
               {service.sTitle}

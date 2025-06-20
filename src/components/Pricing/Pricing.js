@@ -267,7 +267,7 @@
 //                     <h2>Our Pricing Table</h2>
 //                     <div className="text">We take a consultative approach to every client engagement and find actionable <br /> solutions that will help your organization achieve the best outcomes.</div>
 //                     <div className="pull-right">
-//                                                 <Link to="/package-page" className="theme-btn btn-style-eight"><span className="txt">View All </span></Link>
+//                                                 <Link to="/hosting-package" className="theme-btn btn-style-eight"><span className="txt">View All </span></Link>
 //                                             </div>
 //                 </div>
 
@@ -811,7 +811,7 @@
 //                     <h2>Our Pricing Table</h2>
 //                     <div className="text">We take a consultative approach to every client engagement and find actionable <br /> solutions that will help your organization achieve the best outcomes.</div>
 //                     <div className="pull-right">
-//                         <Link to="/package-page" className="theme-btn btn-style-eight"><span className="txt">View All </span></Link>
+//                         <Link to="/hosting-package" className="theme-btn btn-style-eight"><span className="txt">View All </span></Link>
 //                     </div>
 //                 </div>
 
@@ -1418,7 +1418,7 @@
 //                 </Button>
 
 //                 {/* View All Button */}
-//                 <Link to="/package-page" className="theme-btn btn-style-eight">
+//                 <Link to="/hosting-package" className="theme-btn btn-style-eight">
 //                     <span className="txt">View All</span>
 //                 </Link>
 //                 </div>
@@ -2087,7 +2087,7 @@ const Pricing = (props) => {
 
                             {/* View All Button - only show if showViewAll is true */}
                             {showViewAll && (
-                                <Link to="/package-page" className="theme-btn btn-style-eight">
+                                <Link to="/hosting-package" className="theme-btn btn-style-eight">
                                     <span className="txt">View All</span>
                                 </Link>
                             )}
