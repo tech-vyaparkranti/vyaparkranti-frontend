@@ -20,7 +20,7 @@ const WhyChoose = (props) => {
                 <div className="sec-title light">
                     <div className="title">WHY US CHOOSE NOW</div>
                     <h2>At Vyapar Kranti ( A Unit Of Prathma Innopex Private Limited), we provide top-notch facilities to empower your business.</h2>
-                    <div className="text">At Vyapar Kranti ( A Unit Of Prathma Innopex Private Limited), we are more than just a service provider — we are your strategic growth partner in the digital age. Here's why now is the perfect time to partner with us:</div>
+                    <div className="text">At Vyapar Kranti, we are more than just a service provider — we are your strategic growth partner in the digital age. Here's why now is the perfect time to partner with us:</div>
                 </div>
                 <Link  nClick={ClickHandler} to="/about" className="theme-btn btn-style-eight"><span className="txt">Lets Start</span></Link>
                 <div className="inner-container">
