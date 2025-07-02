@@ -198,7 +198,7 @@ export default function PaymentOptionsPage() {
                           
                           <div className="card bg-light p-3">
                             <label className="form-label small fw-medium text-muted mb-2">Merchant Name</label>
-                            <span className="h5 mb-0">vyaparkranti Pvt Ltd</span>
+                            <span className="h5 mb-0">Vyapar Kranti Pvt Ltd</span>
                           </div>
                         </div>
                         
@@ -229,10 +229,10 @@ export default function PaymentOptionsPage() {
                             <div className="card bg-light p-3">
                               <label className="form-label small fw-medium text-muted mb-2">Account Name</label>
                               <div className="d-flex justify-content-between align-items-center">
-                                <span className="h6 mb-0">vyaparkranti Pvt Ltd</span>
+                                <span className="h6 mb-0">Vyapar Kranti Pvt Ltd</span>
                                 <button
                                   className="copy-btn"
-                                  onClick={() => copyToClipboard('VyaparKranti Pvt Ltd', 'account')}
+                                  onClick={() => copyToClipboard('Vyapar Kranti Pvt Ltd', 'account')}
                                   title="Copy Account Name"
                                 >
                                   {copiedField === 'account' ? <Check size={16} /> : <Copy size={16} />}
@@ -308,7 +308,7 @@ export default function PaymentOptionsPage() {
                         <div className="col-12">
                           <div className="card border-warning bg-warning bg-opacity-10 p-4 mb-4">
                             <h3 className="h5 fw-medium mb-3 text-warning-emphasis">Payable To</h3>
-                            <p className="h4 fw-semibold text-warning-emphasis mb-0">vyaparkranti Pvt Ltd</p>
+                            <p className="h4 fw-semibold text-warning-emphasis mb-0">Vyapar Kranti Pvt Ltd</p>
                           </div>
                         </div>
                         
@@ -316,7 +316,7 @@ export default function PaymentOptionsPage() {
                           <div className="card bg-light p-4">
                             <h3 className="h5 fw-medium mb-3 text-dark">Mailing Address</h3>
                             <div className="text-dark">
-                              <p className="mb-1">Vyaparkranti Pvt Ltd</p>
+                              <p className="mb-1">Vyapar Kranti Pvt Ltd</p>
                               <p className="mb-1">123 Business District</p>
                               <p className="mb-1">Connaught Place</p>
                               <p className="mb-1">New Delhi - 110001</p>
@@ -330,7 +330,7 @@ export default function PaymentOptionsPage() {
                             <h4 className="alert-heading h6 fw-medium">Important Instructions:</h4>
                             <ul className="small mb-0">
                               <li>Write your order reference number on the check memo</li>
-                              <li>Check should be drawn in favor of "Vyaparkranti Pvt Ltd"</li>
+                              <li>Check should be drawn in favor of "Vyapar kranti Pvt Ltd"</li>
                               <li>Processing time: 3-5 business days after receipt</li>
                               <li>Checks must be in INR currency</li>
                             </ul>

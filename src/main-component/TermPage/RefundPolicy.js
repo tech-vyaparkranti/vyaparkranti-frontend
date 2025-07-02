@@ -15,7 +15,7 @@ const RefundPolicy = (props) => {
     <div className="auto-container">
         <div className="privacy-content">
             <h2>Refund Policy</h2>
-            <p>At Vyapar Kranti, we strive to deliver high-quality IT solutions tailored to your business needs. We take a consultative approach in every project and commit to transparency, value, and trust. Our refund policy is designed to be fair and clear to ensure your satisfaction while respecting the efforts of our expert teams.</p>
+            <p>At Vyapar Kranti ( A Unit Of Prathma Innopex Private Limited), we strive to deliver high-quality IT solutions tailored to your business needs. We take a consultative approach in every project and commit to transparency, value, and trust. Our refund policy is designed to be fair and clear to ensure your satisfaction while respecting the efforts of our expert teams.</p>
             {/* <div className="date">Updated May 23, 2025</div> */}
             <p>Clients are eligible for a full or partial refund under the following circumstances:
                 <ul>
@@ -29,7 +29,7 @@ const RefundPolicy = (props) => {
 
         <div className="privacy-content">
             <h2>Overview</h2>
-            <p>Vyapar Kranti is a next-generation IT services company committed to empowering businesses through digital transformation. From customized software development to digital marketing, SEO, and cloud infrastructure, we provide scalable solutions that drive results.</p>
+            <p>Vyapar Kranti ( A Unit Of Prathma Innopex Private Limited) is a next-generation IT services company committed to empowering businesses through digital transformation. From customized software development to digital marketing, SEO, and cloud infrastructure, we provide scalable solutions that drive results.</p>
             <p>We believe in continuous innovation, client-centric delivery, and measurable impact to ensure your business thrives in today’s fast-paced digital landscape.</p>
         </div>
 
@@ -41,7 +41,7 @@ const RefundPolicy = (props) => {
 
         <div className="privacy-content">
             <h4>Our Commitment to Excellence</h4>
-            <p>Every client engagement is an opportunity for us to deliver real-world solutions backed by technical expertise. Whether you're a startup looking for MVP development or an enterprise planning digital transformation, Vyapar Kranti has the right tools and talent for you.</p>
+            <p>Every client engagement is an opportunity for us to deliver real-world solutions backed by technical expertise. Whether you're a startup looking for MVP development or an enterprise planning digital transformation, Vyapar Kranti ( A Unit Of Prathma Innopex Private Limited) has the right tools and talent for you.</p>
             <ul className="privacy-list">
                 <li>Custom Web & App Development</li>
                 <li>Digital Marketing & SEO Services</li>
@@ -69,7 +69,7 @@ const RefundPolicy = (props) => {
                 <li>Phone: +91-9958224825</li>
                 <li>Website: <a href="https://vyaparkranti.com">https://vyaparkranti.com</a></li>
             </ul>
-            <p>We are here to support your growth and ensure you get the best from your partnership with Vyapar Kranti.</p>
+            <p>We are here to support your growth and ensure you get the best from your partnership with Vyapar Kranti ( A Unit Of Prathma Innopex Private Limited).</p>
         </div>
     </div>
 </section>

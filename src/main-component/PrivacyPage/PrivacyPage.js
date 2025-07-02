@@ -15,12 +15,12 @@ const PrivacyPage = (props) => {
     <div className="auto-container">
         <div className="privacy-content">
             <h2>Privacy Policy</h2>
-            <p>At Vyapar Kranti, we are committed to protecting your privacy. This policy outlines how we handle your data, ensuring it remains secure and used only for its intended purpose. Our practices align with the highest standards of data protection.</p>
+            <p>At Vyapar Kranti ( A Unit Of Prathma Innopex Private Limited), we are committed to protecting your privacy. This policy outlines how we handle your data, ensuring it remains secure and used only for its intended purpose. Our practices align with the highest standards of data protection.</p>
             {/* <div className="date">Updated May 23, 2025</div> */}
             <p>We collect only the necessary information to provide our services effectively, including web development, digital marketing, and IT consulting. Data is stored securely and used solely to enhance our services and communication with clients.</p>
             <p>Your information is never sold or shared with third parties without your consent, except where required by law. We use modern security technologies to ensure data integrity and confidentiality.</p>
             <h2>Overview</h2>
-            <p>Vyapar Kranti offers a suite of IT solutions tailored for businesses of all sizes. From custom software development to e-commerce solutions and cloud services, we help clients digitize operations and grow efficiently. This privacy policy ensures that as you grow with us, your trust is protected.</p>
+            <p>Vyapar Kranti ( A Unit Of Prathma Innopex Private Limited) offers a suite of IT solutions tailored for businesses of all sizes. From custom software development to e-commerce solutions and cloud services, we help clients digitize operations and grow efficiently. This privacy policy ensures that as you grow with us, your trust is protected.</p>
         </div>
 
         <div className="privacy-content">
@@ -50,7 +50,7 @@ const PrivacyPage = (props) => {
 
         <div className="privacy-content">
             <h2>Security and Data Retention</h2>
-            <p>Vyapar Kranti uses secure servers, encryption, and firewall protection to keep your data safe. We retain information only as long as necessary to fulfill our services, or as required by applicable laws. Regular audits ensure our security protocols remain effective and up-to-date.</p>
+            <p>Vyapar Kranti ( A Unit Of Prathma Innopex Private Limited) uses secure servers, encryption, and firewall protection to keep your data safe. We retain information only as long as necessary to fulfill our services, or as required by applicable laws. Regular audits ensure our security protocols remain effective and up-to-date.</p>
         </div>
 
         <div className="privacy-content">

@@ -516,7 +516,7 @@ const CareerPage = () => {
               <div className="section-title text-center">
                 <h2>Join Our Dynamic Team</h2>
                 <p className="lead">
-                  At Vyapar Kranti, we're building the future of digital business transformation. 
+                  At Vyapar Kranti ( A Unit Of Prathma Innopex Private Limited), we're building the future of digital business transformation. 
                   We're always looking for talented individuals who are passionate about making a difference.
                 </p>
               </div>

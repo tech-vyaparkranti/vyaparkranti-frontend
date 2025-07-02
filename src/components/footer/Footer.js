@@ -217,10 +217,10 @@ const Footer = (props) => {
         window.scrollTo(10, 0);
     }
 
-    const [bannerTitle, setBannerTitle] = useState("Vyapar Kranti Seo Service Provider From Your Agency.");
-    const [bannerContent, setBannerContent] = useState("Vyapar Kranti Banner Title SEo ,description ,seo services,packages kjskd");
+    const [bannerTitle, setBannerTitle] = useState("Vyapar Kranti ( A Unit Of Prathma Innopex Private Limited) Seo Service Provider From Your Agency.");
+    const [bannerContent, setBannerContent] = useState("Vyapar Kranti ( A Unit Of Prathma Innopex Private Limited) Banner Title SEo ,description ,seo services,packages kjskd");
     const [loading, setLoading] = useState(true);
-    const [address, setAddress] = useState("Vayapar Kranti ,Nazafgarh Near Metro Station test ");
+    const [address, setAddress] = useState("Vayapar Kranti ( A Unit Of Prathma Innopex Private Limited), Nazafgarh Near Metro Station test ");
     const [mobile, setMobile] = useState("+1234567790");
     const [mail, setMail] = useState("test@gmail.com");
     const [Map_link, setMap_link] = useState("https://www.google.com/maps?ll=28.61287,76.986676&z=16&t=m&hl=en&gl=IN&mapclient=embed&cid=1957349469795263381");
@@ -414,7 +414,7 @@ const Footer = (props) => {
                 {loading ? (
                     <Skeleton width={300} />
                 ) : (
-                    <>Copyright © 2025 by <Link onClick={ClickHandler} to="/">Vyapar Kranti</Link>. All Rights Reserved.</>
+                    <>Copyright © 2025 by <Link onClick={ClickHandler} to="/">Vyapar Kranti ( A Unit Of Prathma Innopex Private Limited)</Link>. All Rights Reserved.</>
                 )}
                 </div>
                 <div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>

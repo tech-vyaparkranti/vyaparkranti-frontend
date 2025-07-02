@@ -98,9 +98,9 @@ const Contactpage = () => {
  
 
         // const [bannerTitle, setBannerTitle] = useState("Vyapar Kranti Seo Service Provider From Your Agency.");
-        const [bannerContent, setBannerContent] = useState("Vyapar Kranti Banner Title SEo ,description ,seo services,packages kjskd");
+        const [bannerContent, setBannerContent] = useState("Vyapar Kranti ( A Unit Of Prathma Innopex Private Limited) Banner Title SEo ,description ,seo services,packages kjskd");
         const [loading, setLoading] = useState(true);
-        const[address, setAddress] = useState("Vayapar Kranti ,Nazafgarh Near Metro Station test ");
+        const[address, setAddress] = useState("Vyapar Kranti ( A Unit Of Prathma Innopex Private Limited) ,Nazafgarh Near Metro Station test ");
         const[mobile, setMobile] = useState("+1234567790 test");
         const[mail, setMail] = useState("test@gmail.com test");
         const[contact_timing, setcontact_timing] = useState("");
@@ -248,7 +248,7 @@ useEffect(() => {
                         <div className="title"> </div>
                         <h2>Now Very Easy</h2>
                         <div className="text">
-                            Vyapar Kranti is an ITES & Brand Solution company helping businesses  
+                            Vyapar Kranti ( A Unit Of Prathma Innopex Private Limited) is an ITES & Brand Solution company helping businesses  
 
                             <br /> boost digital presence and connect better with customers.
                         </div>

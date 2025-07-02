@@ -805,8 +805,8 @@ const Gallery = () => {
               ))
             ) : (
               <div className="col-12 text-center p-5 bg-light bg-opacity-50 rounded">
-                <p>{error ? `Error: ${error}` : 'No services found matching your criteria.'}</p>
-                <button 
+                <p>{error ? `Error: ${error}` : 'No Image found in Gallery Section.'}</p>
+                {/* <button 
                   onClick={() => {
                     setActiveCategory('all');
                     setSearchTerm('');
@@ -814,7 +814,7 @@ const Gallery = () => {
                   className="btn btn-primary"
                 >
                   Reset Filters
-                </button>
+                </button> */}
               </div>
             )}
           </div>

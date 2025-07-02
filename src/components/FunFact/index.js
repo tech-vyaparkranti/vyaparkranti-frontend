@@ -159,7 +159,7 @@ const FunFact = (props) => {
     const [team_advisor_number, setteam_advisor_number] = useState(20);
     const [project_done_number, setproject_done_number] = useState(200);
     const [loading, setLoading] = useState(true);
-    const [bannerContent, setBannerContent] = useState("Vyapar Kranti Banner Title SEo ,description ,seo services,packages kjskd");
+    const [bannerContent, setBannerContent] = useState("Vyapar Kranti ( A Unit Of Prathma Innopex Private Limited) Banner Title SEo ,description ,seo services,packages kjskd");
     
     const [error, setError] = useState(null);
 

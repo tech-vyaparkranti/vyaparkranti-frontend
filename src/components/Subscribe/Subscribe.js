@@ -105,7 +105,7 @@ const Subscribe = (props) => {
                                 <div className="title">Newsletter</div>
                                 <h2>Subscribe Our Newsletter</h2>
                             </div>
-                            <div className="text">Lorem ipsum dolor sit amet consectetur adipiscing elit donec tempus pellentesque dui vel tristique purus justo </div>
+                            <div className="text">Subscribe to our newsletter and never miss an update. Get the latest news, expert tips, and exclusive content delivered straight to your inbox. </div>
                             <div className="newsletter-form">
                                 {/* <form method="post" onSubmit={SubmitHandler}>
                                     <div className="form-group">
