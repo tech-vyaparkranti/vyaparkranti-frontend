@@ -396,8 +396,8 @@ const Footer = (props) => {
                                             ) : (
                                                 <>
                                                     <li><span className="icon flaticon-wall-clock"></span> {contact_timing} </li>
-                                                    <li><span className="icon flaticon-phone-call"></span><Link onClick={ClickHandler} to="/">{mobile}</Link></li>
-                                                    <li><span className="icon flaticon-email"></span><Link onClick={ClickHandler} to="/">{mail}</Link></li>
+                                                    <li><span className="icon flaticon-phone-call"></span><a href={`tel:${mobile}`}>{mobile}</a> </li>
+                                                    <li><span className="icon flaticon-email"></span><a href={`mailto:${mail}`}>{mail}</a></li>
                                                     <li><span className="icon flaticon-maps-and-flags"></span> {address}</li>
                                                      <li><span className="icon flaticon-maps-and-flags"></span>{international_address}</li>
                                                 </>

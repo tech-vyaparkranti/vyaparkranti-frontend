@@ -1625,7 +1625,7 @@ img {
 }
 
 .fixed-navbar.active .header-style-one {
-	background: #222222;
+	background: linear-gradient(to right, #6917B4 0%, #d54be1 100%);
 	padding-top: 0;
 }
 

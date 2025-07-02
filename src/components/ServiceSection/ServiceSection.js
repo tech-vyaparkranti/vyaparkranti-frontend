@@ -770,7 +770,7 @@ const ServiceSection = (props) => {
                                         <h5>
                                             <Link 
                                                 onClick={ClickHandler} 
-                                                to={`/service-single/${service.slug}`}
+                                                to={`/service/${service.slug}`}
                                                 state={{ serviceData: service }}
                                             >
                                                 {service.sTitle}
