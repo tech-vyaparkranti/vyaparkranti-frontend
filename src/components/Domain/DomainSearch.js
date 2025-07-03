@@ -1406,24 +1406,33 @@ const DomainSearch = () => {
   const [registering, setRegistering] = useState(new Set());
   const [showRegistrationModal, setShowRegistrationModal] = useState(false);
   const [selectedDomain, setSelectedDomain] = useState(null);
+  const [totalDomainPrice, setTotalDomainPrice] = useState(0);
   const [formData, setFormData] = useState({
     username: "",
     passwd: "",
     name: "",
     email: "",
-    "address-line-1": "",
+    address: "",
     city: "",
     state: "",
     country: "IN",
     zipcode: "",
-    "phone-cc": "91",
+    phone_cc: "91",
     phone: "",
+    company: "",
+    domain_price:"",
+    domain_name:"",
   });
   const [formErrors, setFormErrors] = useState({});
   const [user, setUser] = useState(null); // set on login/signup
   const [signIn, setSignIn] = useState(false);
-  const [triggerRegisterAfterAuth, setTriggerRegisterAfterAuth] = useState(null); // holds {domain, price}
- 
+  const [triggerRegisterAfterAuth, setTriggerRegisterAfterAuth] =
+    useState(null); // holds {domain, price}
+
+  useEffect(() => {
+    setSignIn(true);
+  }, []);
+
   const handleSearch = async () => {
     if (!searchTerm.trim()) {
       setError("Please enter a domain name");
@@ -1436,8 +1445,7 @@ const DomainSearch = () => {
 
     try {
       const sld = searchTerm.toLowerCase().replace(/\.[^/.]+$/, "");
-      const authToken = "IKe6WPxUtPR0U08HVHxitOdtk1aA0Heo";
-
+      const authToken = localStorage.getItem('auth_token');
       const controller = new AbortController();
       const timeoutId = setTimeout(() => controller.abort(), 15000);
 
@@ -1480,20 +1488,23 @@ const DomainSearch = () => {
   };
 
   const handleRegisterClick = (domain, price, name, email) => {
-    console.log(name, email, "emailll");
     setSelectedDomain({ domain, price });
     setShowRegistrationModal(true);
     setFormData({
       username: "",
       name: name,
       email: email,
-      "address-line-1": "",
+      address: "",
       city: "",
       state: "",
       country: "IN",
       zipcode: "",
-      "phone-cc": "91",
+      phone_cc: "91",
       phone: "",
+      year: "",
+      company: "",
+      domain_price:"",
+      domain_name:"",
     });
     setFormErrors({});
   };
@@ -1503,6 +1514,9 @@ const DomainSearch = () => {
 
     if (!formData.username.trim()) {
       errors.username = "Username is required";
+    }
+     if (!formData.company.trim()) {
+      errors.company = "Company is required";
     }
 
     // if (!formData.name.trim()) {
@@ -1515,8 +1529,8 @@ const DomainSearch = () => {
     //   errors.email = 'Please enter a valid email address';
     // }
 
-    if (!formData["address-line-1"].trim()) {
-      errors["address-line-1"] = "Address line is required";
+    if (!formData.address.trim()) {
+      errors.address = "Address line is required";
     }
 
     if (!formData.city.trim()) {
@@ -1565,16 +1579,20 @@ const DomainSearch = () => {
           },
           body: JSON.stringify({
             username: formData.username,
-            passwd: formData.passwd,
+            // passwd: formData.passwd,
             name: formData.name,
             email: formData.email,
-            "address-line-1": formData["address-line-1"],
+            address: formData.address,
             city: formData.city,
             state: formData.state,
             country: formData.country,
             zipcode: formData.zipcode,
-            "phone-cc": formData["phone-cc"],
+            phone_cc: formData.phone_cc,
             phone: formData.phone,
+            company:formData.company,
+            year:formData.year,
+            domain_name:selectedDomain?.domain,
+            domain_price:totalDomainPrice,
           }),
         }
       );
@@ -1622,12 +1640,10 @@ const DomainSearch = () => {
       minimumFractionDigits: 0,
     }).format(price);
   };
-  console.log(signIn, "sign");
 
   return (
     <div className="domain-search-container">
       <div className="search-box">
-
         <h2>Find Your Perfect Domain</h2>
         <p className="subtitle">
           Search for available domains and secure your online presence
@@ -1781,7 +1797,12 @@ const DomainSearch = () => {
           onSuccess={(loggedInUser) => {
             setUser(loggedInUser);
             setSignIn(false);
-            // handleRegisterClick("jahsjd",678,loggedInUser.name,loggedInUser.email);
+            handleRegisterClick(
+              "jahsjd",
+              678,
+              loggedInUser.name,
+              loggedInUser.email
+            );
             if (triggerRegisterAfterAuth) {
               handleRegisterClick(
                 triggerRegisterAfterAuth.domain,
@@ -1894,16 +1915,16 @@ const DomainSearch = () => {
                 <input
                   id="address-line-1"
                   type="text"
-                  value={formData["address-line-1"]}
+                  value={formData.address}
                   onChange={(e) =>
-                    handleInputChange("address-line-1", e.target.value)
+                    handleInputChange("address", e.target.value)
                   }
                   placeholder="Street address, P.O. box, company name"
-                  className={formErrors["address-line-1"] ? "error" : ""}
+                  className={formErrors.address ? "error" : ""}
                 />
-                {formErrors["address-line-1"] && (
+                {formErrors.address && (
                   <span className="field-error">
-                    {formErrors["address-line-1"]}
+                    {formErrors.address}
                   </span>
                 )}
               </div>
@@ -1994,12 +2015,55 @@ const DomainSearch = () => {
                   )}
                 </div>
               </div>
+              <div className="form-group">
+                <label htmlFor="zipcode">Company</label>
+                <input
+                  id="company"
+                  type="text"
+                  value={formData.company}
+                  onChange={(e) => handleInputChange("company", e.target.value)}
+                  placeholder="Enter Company Name"
+                  className={formErrors.company ? "error" : ""}
+                />
+                {formErrors.company && (
+                  <span className="field-error">{formErrors.company}</span>
+                )}
+              </div>
+              <div className="form-group year">
+                <label htmlFor="year">Year for Domain *</label>
+                <input
+                  id="year"
+                  type="number"
+                  value={formData.year}
+                  required
+                  onChange={(e) => {
+                    const year = Number(e.target.value);
+                    handleInputChange("year", year);
+                    if (selectedDomain?.price) {
+                      const total = selectedDomain.price * year;
+                      setTotalDomainPrice(total);
+                    }
+                  }}
+                  placeholder="Enter Domain Year"
+                  className={formErrors.year ? "error" : ""}
+                />
+
+                {formErrors.year && (
+                  <span className="field-error">{formErrors.year}</span>
+                )}
+              </div>
 
               <div className="price-summary">
                 <div className="price-row">
                   <span>Domain: {selectedDomain?.domain}</span>
                   <span className="price-amount">
                     {formatPrice(selectedDomain?.price)}/year
+                  </span>
+                </div>
+                <div className="price-row mt-2">
+                  <span>Total for {formData.year} year(s):</span>
+                  <span className="price-amount">
+                    {formatPrice(totalDomainPrice)}
                   </span>
                 </div>
               </div>

@@ -16,7 +16,6 @@ import Footer from '../../components/footer/Footer';
 import WhyChoose from './../../components/WhyChoose/WhyChoose';
 import SeoSection from '../../components/SeoSection/SeoSection';
 import BuildStep from '../../components/BuildStep/BuildStep';
-import Dashboard from '../../components/Dashboard/Dashboard';
 
 const HomePage = () => {
 

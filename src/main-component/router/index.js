@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { BrowserRouter, Routes, Route, } from "react-router-dom";
 
@@ -35,7 +36,6 @@ import ProjectLeftPage from '../ProjectLeftPage/ProjectLeftPage';
 import ProjectRightPage from '../ProjectRightPage/ProjectRightPage';
 //import CareerPage from '../../components/CareerPage/CareerPage';
 import CareersPage from '../CareersPage/CareersPage';
-import Dashboard from '../../components/Dashboard/Dashboard';
 // import BlogSingletest from '../BlogDetails/BlogSingletest';
  
 import GalleryPage from '../GalleryPage/GalleryPage';
@@ -46,6 +46,9 @@ import PaymentPage from '../PaymentPage/PaymentPage';
 import DomainPage from '../DomainPage/DomainPage';
 import PaymentSucessPage from '../PaymentSucessPage/PaymentSucessPage';
 import PaymentFailPage from '../PaymentFailPage/PaymentFailPage';
+import Dashboard from '../../Dashboard';
+import Users from '../../Dashboard/Pages/Users';
+import Purchase from '../../Dashboard/Pages/Purchase';
 // import Faq from '../../components/Faq/Faq';
 // import PricingSinglePage from '../../components/Pricing/PricingSinglePage';
 
@@ -111,7 +114,16 @@ const AllRoute = () => {
           {/* <Route path="/blog-details/:id" element={<BlogSingletest />} /> */}
 
 
+        <Route path="/dashboard" element={<Dashboard />}>
+          <Route index element={<Dashboard />} />
+          <Route path="users" element={<Users />} />
+          <Route path="purchase" element={<Purchase />} />
+          {/* <Route path="analytics" element={<Analytics />} />
+          <Route path="settings" element={<Settings />} /> */}
+        </Route>
+
         </Routes>
+        
       </BrowserRouter>
 
     </div>
