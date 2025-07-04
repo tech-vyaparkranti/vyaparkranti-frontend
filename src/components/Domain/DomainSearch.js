@@ -1449,6 +1449,7 @@ const DomainSearch = () => {
         "https://www.vyaparkranti.com/laravel/api/domain/check",
         {
           method: "POST",
+          
           headers: {
             "Content-Type": "application/json",
             Accept: "application/json",
