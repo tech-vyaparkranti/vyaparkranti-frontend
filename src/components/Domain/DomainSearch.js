@@ -1429,10 +1429,6 @@ const DomainSearch = () => {
   const [triggerRegisterAfterAuth, setTriggerRegisterAfterAuth] =
     useState(null); // holds {domain, price}
 
-  useEffect(() => {
-    setSignIn(true);
-  }, []);
-
   const handleSearch = async () => {
     if (!searchTerm.trim()) {
       setError("Please enter a domain name");
